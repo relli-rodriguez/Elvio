@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio de Artista Gráfico</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tipografía moderna -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+ 
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="img/LOGO.jpeg" alt="Logo" width="40" height="40" class="me-2" />
+  Elvio Cohene
+</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Trabajos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+ <!-- Hero con carrusel de fondo -->
+<section class="hero position-relative text-center text-white">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Imágenes del carrusel -->
+      <div class="carousel-item active ratio ratio-16x9">
+    <img src="img/2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 1">
+  </div>
+  <div class="carousel-item ratio ratio-16x9">
+    <img src="img/portada3.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 2">
+  </div>
+  <div class="carousel-item ratio ratio-16x9">
+    <img src="img/MURAL1.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 3">
+  </div>
+  <div class="carousel-item ratio ratio-16x9">
+    <img src="img/MURAL2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 4">
+  </div>
+    </div>
+
+    <!-- Flechas de navegación -->
+<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Anterior</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Siguiente</span>
+</button>
+
+
+  </div>
+
+  <!-- Texto sobre el carrusel -->
+  <div class="hero-text position-absolute top-50 start-50 translate-middle text-shadow">
+    <h1 class="display-4">Soy un Artista Gráfico</h1>
+    <p class="lead">Destruyo todo lo que considero que limita tu visión</p>
+  </div>
+</section>
+
+
+  <!-- Sobre mí -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Sobre mí</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Soy un artista gráfico apasionado por el diseño visual, la ilustración digital y la creación de identidades visuales. Mi enfoque es combinar creatividad con funcionalidad para crear piezas únicas que comuniquen mensajes poderosos.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/perfil.jpg" class="profile-img mx-auto d-block" alt="Foto de perfil" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portfolio" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Mis Trabajos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/portada.jpg" class="portfolio-img card-img-top" alt="Proyecto 1" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Diseño de cartel para evento cultural.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/portada2.jpg" class="portfolio-img card-img-top" alt="Proyecto 2" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+              <p class="card-text">Identidad visual para una marca de ropa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/portada3.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Ilustración digital para revista editorial.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/1.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Ilustración digital para revista editorial.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/12.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Ilustración digital para revista editorial.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/3.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Ilustración digital para revista editorial.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/4.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Ilustración digital para revista editorial.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/5.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Ilustración digital para revista editorial.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/6.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Ilustración digital para revista editorial.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje..." required></textarea>
+            </div>
+            <div id="formAlert" class="alert alert-success d-none">¡Mensaje enviado con éxito!</div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+
+  <!-- Redes sociales -->
+  <div class="social-icons">
+    <a href="https://wa.me/595981749656?text=..." class="text-white me-3" target="_blank" aria-label="WhatsApp">
+      <i class="bi bi-whatsapp" style="font-size: 1.8rem;"></i>
+    </a>
+    <a href="https://www.facebook.com/ElvioCohene" class="text-white me-3" target="_blank">
+      <i class="bi bi-facebook" style="font-size: 1.8rem;"></i>
+    </a>
+    <a href="https://www.instagram.com/elviocohene/" class="text-white" target="_blank">
+      <i class="bi bi-instagram" style="font-size: 1.8rem;"></i>
+    </a>
+
+  </div>
+
+  <p class="mb-2">&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/595981749656?text=¡Hola!%20Vi%20tu%20portafolio%20y%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+</body>
+</html>

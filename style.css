@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.portfolio-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #343a40;
+}
+
+
+/* Estilos para la sección de héroe */
+/*.hero {
+  height: 100vh;
+  overflow: hidden;
+}*/
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    aspect-ratio: 4/3;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+
+.hero-text {
+  z-index: 10;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para el footer */
+.social-icons a:hover i {
+  color: #25D366; /* Verde para WhatsApp o lo que quieras */
+  transition: 0.3s;
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
+}
+
+/* Estilos para la tipografía */ 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Animación para el texto del carrusel */
+.hero-text {
+  animation: fadeUp 1.2s ease-out both;
+  opacity: 0; /* Para que comience invisible */
+}
+
+/* Definimos la animación */
+@keyframes fadeUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
