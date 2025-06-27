@@ -102,12 +102,6 @@ body {
   margin-top: 0 !important;
 }
 
-/* Animación para el texto del carrusel */
-.hero-text {
-  animation: fadeUp 1.2s ease-out both;
-  opacity: 0; /* Para que comience invisible */
-}
-
 /* Definimos la animación */
 @keyframes fadeUp {
   0% {
@@ -202,112 +196,225 @@ body {
   transform: translateY(0);
 }
 
-/* --- CARRUSEL HERO MODERNO --- */
+/* --- CARRUSEL SÚPER MODERNO CON EFECTOS ESPECTACULARES --- */
 .carousel-img-modern {
   position: relative;
-  border-radius: 32px;
+  border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   height: 100%;
+  margin: 0 25px;
+  transform: perspective(1000px) rotateX(2deg);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.carousel-img-modern:hover {
+  transform: perspective(1000px) rotateX(0deg) scale(1.02);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
 }
 
 .hero-carousel-img-modern {
-  border-radius: 32px;
+  border-radius: 28px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.7s cubic-bezier(.77,0,.18,1), opacity 0.7s cubic-bezier(.77,0,.18,1);
-  opacity: 0.92;
-  animation: fadeZoomIn 1.2s cubic-bezier(.77,0,.18,1);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0.9;
+  animation: slideInZoom 1.8s cubic-bezier(0.23, 1, 0.32, 1);
+  filter: brightness(0.9) contrast(1.1);
 }
 
-@keyframes fadeZoomIn {
+@keyframes slideInZoom {
   0% {
     opacity: 0.5;
-    transform: scale(1.08);
+    transform: scale(1.1) translateY(20px);
+    filter: brightness(0.7) contrast(1.2);
   }
   100% {
-    opacity: 0.92;
-    transform: scale(1);
+    opacity: 0.9;
+    transform: scale(1) translateY(0);
+    filter: brightness(0.9) contrast(1.1);
   }
 }
 
 .carousel-img-modern:hover .hero-carousel-img-modern {
-  transform: scale(1.04);
+  transform: scale(1.05);
   opacity: 1;
+  filter: brightness(1) contrast(1.05);
 }
 
 .carousel-overlay-modern {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(120deg, rgba(30,34,90,0.32) 0%, rgba(0,0,0,0.38) 100%);
+  background: linear-gradient(145deg, 
+    rgba(0,0,0,0.2) 0%, 
+    rgba(0,0,0,0.4) 50%, 
+    rgba(0,0,0,0.6) 100%);
   z-index: 2;
+  border-radius: 28px;
+  backdrop-filter: blur(1px);
 }
 
-/* Indicadores modernos */
+/* Indicadores súper modernos */
 .carousel-indicators-modern {
   position: absolute;
-  bottom: 24px;
+  bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 16px;
+  gap: 15px;
   z-index: 4;
 }
+
 .carousel-indicators-modern button {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  border: none;
-  background: #fff;
-  opacity: 0.5;
-  transition: opacity 0.3s, background 0.3s, transform 0.3s;
-  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+  border: 2px solid rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.3);
+  opacity: 0.8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: relative;
+  overflow: hidden;
 }
+
+.carousel-indicators-modern button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 .carousel-indicators-modern button.active,
 .carousel-indicators-modern button:focus {
   opacity: 1;
-  background: #1e225a;
-  transform: scale(1.25);
+  background: rgba(255,255,255,0.9);
+  transform: scale(1.4);
+  box-shadow: 0 6px 20px rgba(255,255,255,0.4);
+  border-color: #fff;
 }
 
-/* Flechas de navegación modernas */
+.carousel-indicators-modern button.active::before,
+.carousel-indicators-modern button:focus::before {
+  width: 6px;
+  height: 6px;
+}
+
+/* Flechas de navegación glassmorphism */
 .modern-carousel-arrow {
-  width: 54px;
-  height: 54px;
+  width: 60px;
+  height: 60px;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(30,34,90,0.18);
+  background: rgba(255,255,255,0.1);
   border-radius: 50%;
-  border: none;
-  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
-  transition: background 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   z-index: 5;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
 }
+
+.modern-carousel-arrow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s;
+}
+
 .modern-carousel-arrow:hover {
-  background: #1e225a;
-  box-shadow: 0 4px 16px rgba(30,34,90,0.18);
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  transform: translateY(-50%) scale(1.15);
+  border-color: rgba(255,255,255,0.4);
+}
+
+.modern-carousel-arrow:hover::before {
+  left: 100%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(1) drop-shadow(0 2px 4px rgba(30,34,90,0.18));
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+  transition: all 0.3s ease;
 }
 
+.modern-carousel-arrow:hover .carousel-control-prev-icon,
+.modern-carousel-arrow:hover .carousel-control-next-icon {
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.7));
+  transform: scale(1.1);
+}
+
+/* Efectos adicionales para el texto */
+.hero-text {
+  animation: textGlow 2s ease-in-out infinite alternate;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+  z-index: 10 !important;
+  position: relative;
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
+  }
+  to {
+    text-shadow: 0 0 30px rgba(255,255,255,0.5);
+  }
+}
+
+/* Responsive súper moderno */
 @media (max-width: 768px) {
   .carousel-img-modern {
-    border-radius: 16px;
+    border-radius: 20px;
+    margin: 0 15px;
+    transform: perspective(800px) rotateX(1deg);
   }
+  
   .hero-carousel-img-modern {
-    border-radius: 16px;
+    border-radius: 20px;
   }
+  
+  .carousel-overlay-modern {
+    border-radius: 20px;
+  }
+  
   .carousel-indicators-modern {
-    bottom: 10px;
-    gap: 8px;
+    bottom: 25px;
+    gap: 10px;
   }
+  
   .modern-carousel-arrow {
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-img-modern {
+    margin: 0 8px;
+    transform: none;
+  }
+  
+  .carousel-indicators-modern {
+    bottom: 20px;
+  }
+  
+  .modern-carousel-arrow {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -331,5 +438,64 @@ body > .hero:first-child {
 @media (min-width: 992px) {
   .navbar {
     min-height: 56px;
+  }
+}
+
+/* --- CARRUSEL CON ALTURA FIJA --- */
+.hero {
+  height: 60vh;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+#heroCarousel {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    min-height: 300px;
+    max-height: 450px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 45vh;
+    min-height: 250px;
+    max-height: 350px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 0.9rem;
   }
 }

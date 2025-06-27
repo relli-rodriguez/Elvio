@@ -18,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="#" onclick="window.location.reload(); return false;">
   <img src="img/LOGO.jpeg" alt="Logo" width="40" height="40" class="me-2" />
   Elvio Cohene
 </a>
@@ -41,27 +41,47 @@
 <section class="hero position-relative text-center text-white">
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <!-- Imágenes del carrusel -->
-      <div class="carousel-item active ratio ratio-16x9">
-        <img src="img/2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 1">
+      <!-- Imágenes del carrusel con overlay y efectos modernos -->
+      <div class="carousel-item active">
+        <div class="carousel-img-modern">
+          <img src="img/2.jpg" class="w-100 h-100 object-fit-cover hero-carousel-img-modern" alt="Mural 1">
+          <div class="carousel-overlay-modern"></div>
+        </div>
       </div>
-      <div class="carousel-item ratio ratio-16x9">
-        <img src="img/portada3.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 2">
+      <div class="carousel-item">
+        <div class="carousel-img-modern">
+          <img src="img/portada3.jpg" class="w-100 h-100 object-fit-cover hero-carousel-img-modern" alt="Mural 2">
+          <div class="carousel-overlay-modern"></div>
+        </div>
       </div>
-      <div class="carousel-item ratio ratio-16x9">
-        <img src="img/MURAL1.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 3">
+      <div class="carousel-item">
+        <div class="carousel-img-modern">
+          <img src="img/MURAL1.jpg" class="w-100 h-100 object-fit-cover hero-carousel-img-modern" alt="Mural 3">
+          <div class="carousel-overlay-modern"></div>
+        </div>
       </div>
-      <div class="carousel-item ratio ratio-16x9">
-        <img src="img/MURAL2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 4">
+      <div class="carousel-item">
+        <div class="carousel-img-modern">
+          <img src="img/MURAL2.jpg" class="w-100 h-100 object-fit-cover hero-carousel-img-modern" alt="Mural 4">
+          <div class="carousel-overlay-modern"></div>
+        </div>
       </div>
     </div>
 
-    <!-- Flechas de navegación -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <!-- Indicadores modernos -->
+    <div class="carousel-indicators-modern">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <!-- Flechas de navegación modernas -->
+    <button class="carousel-control-prev modern-carousel-arrow" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <button class="carousel-control-next modern-carousel-arrow" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
@@ -69,7 +89,8 @@
 
   <!-- Texto sobre el carrusel -->
   <div class="hero-text position-absolute top-50 start-50 translate-middle text-shadow">
-    <h1 class="display-4">Destruyo todo lo que considero que limita tu visión</h1>
+    <h1 class="display-4">Soy un Artista Gráfico</h1>
+    <p class="lead">Destruyo todo lo que considero que limita tu visión</p>
   </div>
 </section>
 
