@@ -49,17 +49,17 @@ html {
 
 .hero-text {
   z-index: 10;
-  background: rgba(30, 34, 90, 0.55); /* Fondo semitransparente oscuro */
-  border-radius: 18px;
-  padding: 1.2rem 2.2rem;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  /* background: rgba(30, 34, 90, 0.55); */ /* Fondo semitransparente oscuro - ELIMINADO */
+  /* border-radius: 18px; */ /* ELIMINADO */
+  /* padding: 1.2rem 2.2rem; */ /* ELIMINADO */
+  /* box-shadow: 0 4px 24px rgba(0,0,0,0.25); */ /* ELIMINADO */
   text-shadow: 2px 2px 8px rgba(0,0,0,0.85);
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */ /* ELIMINADO */
 }
 
 @media (max-width: 768px) {
   .hero-text {
-    padding: 0.7rem 1rem;
+    /* padding: 0.7rem 1rem; */ /* ELIMINADO */
     font-size: 1rem;
   }
 }
