@@ -25,3 +25,31 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     alertBox.classList.add('d-none');
   }, 3000);
 });
+
+// Animación de entrada para la sección Sobre mí
+window.addEventListener('DOMContentLoaded', function () {
+  setTimeout(function () {
+    document.getElementById('about-text').classList.add('visible');
+    document.getElementById('about-img').classList.add('visible');
+  }, 300); // pequeño retardo para suavidad
+});
+
+// Animación de entrada para las tarjetas del portafolio
+window.addEventListener('DOMContentLoaded', function () {
+  var cards = document.querySelectorAll('.fade-in-up-portfolio');
+  cards.forEach(function(card, i) {
+    setTimeout(function() {
+      card.classList.add('visible');
+    }, 400 + i * 120); // retardo escalonado
+  });
+});
+
+// Animación de entrada para la sección #about
+window.addEventListener('DOMContentLoaded', function () {
+  var aboutSection = document.querySelector('.fade-in-section');
+  if (aboutSection) {
+    setTimeout(function () {
+      aboutSection.classList.add('visible');
+    }, 300);
+  }
+});

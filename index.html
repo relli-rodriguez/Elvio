@@ -43,30 +43,28 @@
     <div class="carousel-inner">
       <!-- Imágenes del carrusel -->
       <div class="carousel-item active ratio ratio-16x9">
-    <img src="img/2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 1">
-  </div>
-  <div class="carousel-item ratio ratio-16x9">
-    <img src="img/portada3.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 2">
-  </div>
-  <div class="carousel-item ratio ratio-16x9">
-    <img src="img/MURAL1.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 3">
-  </div>
-  <div class="carousel-item ratio ratio-16x9">
-    <img src="img/MURAL2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 4">
-  </div>
+        <img src="img/2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 1">
+      </div>
+      <div class="carousel-item ratio ratio-16x9">
+        <img src="img/portada3.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 2">
+      </div>
+      <div class="carousel-item ratio ratio-16x9">
+        <img src="img/MURAL1.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 3">
+      </div>
+      <div class="carousel-item ratio ratio-16x9">
+        <img src="img/MURAL2.jpg" class="w-100 h-100 object-fit-cover" alt="Mural 4">
+      </div>
     </div>
 
     <!-- Flechas de navegación -->
-<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Anterior</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Siguiente</span>
-</button>
-
-
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
   </div>
 
   <!-- Texto sobre el carrusel -->
@@ -78,15 +76,17 @@
 
 
   <!-- Sobre mí -->
-  <section id="about" class="py-5">
+  <section id="about" class="py-5 fade-in-section">
     <div class="container">
       <h2 class="text-center mb-4">Sobre mí</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Soy un artista gráfico apasionado por el diseño visual, la ilustración digital y la creación de identidades visuales. Mi enfoque es combinar creatividad con funcionalidad para crear piezas únicas que comuniquen mensajes poderosos.</p>
-        </div>
-        <div class="col-md-6">
-          <img src="img/perfil.jpg" class="profile-img mx-auto d-block" alt="Foto de perfil" />
+      <div class="row justify-content-center">
+        <div class="about-card col-md-10">
+          <div class="col-md-6 fade-in-up" id="about-text">
+            <p>Soy un artista gráfico apasionado por el diseño visual, la ilustración digital y la creación de identidades visuales. Mi enfoque es combinar creatividad con funcionalidad para crear piezas únicas que comuniquen mensajes poderosos.</p>
+          </div>
+          <div class="col-md-6 fade-in-up" id="about-img">
+            <img src="img/perfil.jpg" class="profile-img mx-auto d-block" alt="Foto de perfil" />
+          </div>
         </div>
       </div>
     </div>
@@ -96,95 +96,90 @@
   <section id="portfolio" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">Mis Trabajos</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/portada.jpg" class="portfolio-img card-img-top" alt="Proyecto 1" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 1</h5>
-              <p class="card-text">Diseño de cartel para evento cultural.</p>
+      <div class="portfolio-card-group">
+        <div class="row g-4">
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/portada.jpg" class="portfolio-img card-img-top" alt="Proyecto 1" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1</h5>
+                <p class="card-text">Diseño de cartel para evento cultural.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/portada2.jpg" class="portfolio-img card-img-top" alt="Proyecto 2" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 2</h5>
+                <p class="card-text">Identidad visual para una marca de ropa.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/portada3.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Ilustración digital para revista editorial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/1.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Ilustración digital para revista editorial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/12.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Ilustración digital para revista editorial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/3.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Ilustración digital para revista editorial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/4.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Ilustración digital para revista editorial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/5.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Ilustración digital para revista editorial.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 fade-in-up-portfolio">
+            <div class="card">
+              <img src="img/6.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3</h5>
+                <p class="card-text">Ilustración digital para revista editorial.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/portada2.jpg" class="portfolio-img card-img-top" alt="Proyecto 2" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 2</h5>
-              <p class="card-text">Identidad visual para una marca de ropa.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/portada3.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Ilustración digital para revista editorial.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/1.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Ilustración digital para revista editorial.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/12.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Ilustración digital para revista editorial.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/3.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Ilustración digital para revista editorial.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/4.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Ilustración digital para revista editorial.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/5.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Ilustración digital para revista editorial.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card">
-            <img src="img/6.jpg" class="portfolio-img card-img-top" alt="Proyecto 3" />
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Ilustración digital para revista editorial.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
